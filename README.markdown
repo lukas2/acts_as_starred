@@ -15,4 +15,12 @@ And add the following in your model:
       ..
     end
 
+Your model-instances will then have the methods
+
+    def star!(user)
+    def unstar!(user)
+
+..that you can use in your controllers to set and unset stars for items and users.
+
+
 This plugin requires that a model "User" exists.
