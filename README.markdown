@@ -10,7 +10,7 @@ To install run:
 
 And add the following in your model:
   
-    class Post < ActiveRecord::Base
+    class Item < ActiveRecord::Base
       acts_as_starred
       ..
     end
@@ -25,7 +25,7 @@ Your model-instances will then have the methods
 
 With 
     
-    def starred_for(starrable)
+    Item.starred_for(starrable)
 
 you get a list of stars for your starrable (=item).
 
