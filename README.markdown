@@ -19,8 +19,15 @@ Your model-instances will then have the methods
 
     def star!(user)
     def unstar!(user)
+    def starred_by
 
-..that you can use in your controllers to set and unset stars for items and users.
+..that you can use in your controllers to set and unset stars for items and users and see what users have starred a particular item.
+
+With 
+    
+    def starred_for(starrable)
+
+you get a list of stars for your starrable (=item).
 
 
 This plugin requires that a model "User" exists.
